@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Creates Fluent Validator Class ( FluentValidation )</Title>
+      <Author>Ahmed Hussien</Author>
+      <Description>Creates a validator class using FluentValidation</Description>
+      <Shortcut>validator</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[public class $TypeName$Validator : AbstractValidator<$TypeName$>
+          {
+              public $TypeName$Validator()
+              {
+                $selected$ $end$
+              }
+          }]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>TypeName</ID>
+          <ToolTip>Choose the type that the validator handle.</ToolTip>
+          <Default>TypeName</Default>
+        </Literal>
+      </Declarations>
+      <Imports>
+        <Import>
+          <Namespace>FluentValidation</Namespace>
+        </Import>
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
